@@ -64,8 +64,13 @@ textarea {
   }
 }
 @media only screen and (max-width: 1700px) {
-  .aside {
+  .main {
+    max-width: 1000px;
+  }
+}
+@media only screen and (max-width: 1700px) {
+  /* .aside {
     flex-direction: row;
     flex-wrap: wrap;
-  }
+  } */
 }
