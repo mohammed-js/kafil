@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Font Awesome Example</title>
+    <link rel="stylesheet" href="./components/seller-card/seller-card.css" />
+    <link rel="stylesheet" href="./components/info-card/info-card.css" />
+    <link rel="stylesheet" href="./components/info-card/share-card.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#navbarContainer").load("./components/navbar/navbar.html");
+        $("#swiperContainer").load("./components/swiper/swiper.html");
+        $("#contentContainer").load("./components/rating/rating.html");
+        $("#sellerContainer").load("./components/seller-card/seller-card.html");
+        $("#infoContainer").load("./components/info-card/info-card.html");
+        $("#shareContainer").load("./components/share-card/share-card.html");
+        $("#footerContainer").load("./components/cards/cards.html");
+      });
+    </script>
+  </head>
+  <body>
+    <nav>
+      <div id="navbarContainer"></div>
+    </nav>
+    <div class="home_container">
+      <div class="main">
+        <section>
+          <div>
+            <div style="color: var(--grey); margin-bottom: 20px">
+              Design / Logo Design
+            </div>
+            <div style="margin-bottom: 20px">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam
+              nisi, cras neque Lorem ipsum dolor sit amet,
+            </div>
+            <div style="margin-bottom: 20px; display: flex; gap: 10px">
+              <span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+              </span>
+              <span>4.1 (500)</span>
+              <img src="./assets/images/share.svg" style="margin-left: auto" />
+              <img src="./assets/images/heart-wireframe.svg" />
+            </div>
+          </div>
+          <div id="swiperContainer"></div>
+          <div>
+            <div class="title">Description</div>
+            <div class="card">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam
+              nisi, cras neque Lorem ipsum dolor sit amet, Lorem ipsum dolor sit
+              amet, consectetur adipiscing elit. Diam nisi, cras neque Lorem
+              ipsum dolor sit amet, Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Diam nisi, cras neque Lorem ipsum dolor sit amet,
+              Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Diam nisi, cras neque Lorem ipsum
+              dolor sit amet.
+            </div>
+          </div>
+          <div id="contentContainer"></div>
+        </section>
+      </div>
+      <aside class="aside">
+        <div id="sellerContainer"></div>
+        <div id="infoContainer"></div>
+        <div id="shareContainer"></div>
+      </aside>
+    </div>
+    <footer>
+      <div id="footerContainer"></div>
+    </footer>
+  </body>
+</html>

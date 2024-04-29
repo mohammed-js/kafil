@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Font Awesome Example</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    /> -->
+    <link rel="stylesheet" href="./styles/index.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // $("#contentContainer").load("./components/swiper/swiper.html");
+        $("#navbarContainer").load("./components/navbar/navbar.html");
+        $("#contentContainer").load("./components/rating/rating.html");
+        // $("#loadButton").click(function () {
+        //   $("#contentContainer").load("./components/component.html");
+        // });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="navbarContainer"></div>
+
+    <div>Contests</div>
+  </body>
+</html>

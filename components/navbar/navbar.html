@@ -1,0 +1,80 @@
+<link rel="stylesheet" href="./components/navbar/navbar.css" />
+
+<div class="navbar_container">
+  <!-- mobile burger -->
+  <div class="navbar_button_container dropdown_burger burger_menu">
+    <img
+      src="../../assets/images/burger.svg"
+      style="width: 40px; height: 40px"
+      class="button_img dropbtn_burger"
+      onclick="myFunction_burger()"
+    />
+    <!-- dropdown -->
+    <div
+      id="myDropdown_burger"
+      class="dropdown-content_burger card"
+      style="min-width: 100px"
+    >
+      <a href="#actions">Actions</a>
+      <a href="#contests">Contests</a>
+      <a href="#projects">Projects</a>
+    </div>
+  </div>
+
+  <!-- logo -->
+  <img src="../../assets/images/logo.svg" class="logo" />
+  <!-- middle section -->
+  <div class="navbar_buttons_container" id="middle_section_container"></div>
+  <!-- lase section -->
+  <div class="navbar_buttons_container">
+    <div class="navbar_button_container">
+      <img src="../../assets/images/messages.svg" class="button_img" />
+      <div class="badge">10</div>
+    </div>
+    <div class="navbar_button_container">
+      <img src="../../assets/images/notification.svg" class="button_img" />
+
+      <div class="badge">10</div>
+    </div>
+    <div class="navbar_button_container dropdown">
+      <img
+        src="../../assets/images/reviewer.svg"
+        style="width: 40px; height: 40px"
+        class="button_img dropbtn"
+        onclick="myFunction()"
+      />
+      <!-- dropdown -->
+      <div
+        id="myDropdown"
+        class="dropdown-content card image_picker"
+        style="left: -220px; top: 50px"
+      >
+        <div class="row">
+          <img src="../../assets/images/11.svg" />
+        </div>
+        <div class="row">
+          <img src="../../assets/images/22.svg" />
+          <label class="switch" onclick="handleClick">
+            <input type="checkbox" checked />
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div class="row">
+          <img src="../../assets/images/33.svg" />
+          <img src="../../assets/images/ar.svg" />
+        </div>
+        <div class="row">
+          <img src="../../assets/images/44.svg" />
+        </div>
+        <div class="row">
+          <img src="../../assets/images/55.svg" />
+        </div>
+        <!-- <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a> -->
+      </div>
+    </div>
+  </div>
+</div>
+<script src="../../scripts/general.js"></script>
+<script src="./components/navbar/navbar.js"></script>
